@@ -46,7 +46,7 @@ def process_all_records():
     previous_date = 0
     temp_previous_date = 0
     if cache.get('dictionary_sku_store'):
-        dictionary_sku_store = cache.get('dictionary_sku_store')
+        dictionary_sku_store = cache.get('dictionary_sku_store').decode('utf-8')
     else:
         dictionary_sku_store = get_sku_store_from_solr()
 
