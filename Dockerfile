@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # run the command
-CMD ["python","./NodeAsAService.py"]
+CMD ["python","NodeAsAService.py"]
