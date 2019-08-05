@@ -1,3 +1,8 @@
-FROM python:3.5
-RUN pip install Flask==0.11.1 redis==2.10.5
-CMD ["python","NodeAsAService.py"]
+# Instructions copied from - https://hub.docker.com/_/python/
+FROM python:3-onbuild
+
+# tell the port number the container should expose
+EXPOSE 5000
+
+# run the command
+CMD ["python","./NodeAsAService.py"]
